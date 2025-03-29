@@ -1,6 +1,10 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
+<<<<<<< HEAD
   "style": "new-york",
+=======
+  "style": "default",
+>>>>>>> 62785052cf75ed507755181a49a430ae1eb9c025
   "rsc": true,
   "tsx": true,
   "tailwind": {

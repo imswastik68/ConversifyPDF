@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import type { Metadata } from "next";
 import "./globals.css";
 import {Outfit} from "next/font/google"
@@ -12,6 +13,10 @@ export const metadata: Metadata = {
 };
 
 const outfit = Outfit({subsets: ['latin']});
+=======
+import { ClerkProvider } from '@clerk/nextjs';
+import "./globals.css";
+>>>>>>> 62785052cf75ed507755181a49a430ae1eb9c025
 
 export default function RootLayout({
   children,
@@ -21,6 +26,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
+<<<<<<< HEAD
         <body
           className= {outfit.className}
         >
@@ -32,5 +38,12 @@ export default function RootLayout({
       </html>
     </ClerkProvider>
     
+=======
+        <body className='min-h-screen h-screen overflow-hidden flex flex-col'>
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
+>>>>>>> 62785052cf75ed507755181a49a430ae1eb9c025
   );
 }
