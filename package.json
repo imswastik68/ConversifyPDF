@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "chatpdf",
-=======
-  "name": "conversify-pdf",
->>>>>>> 62785052cf75ed507755181a49a430ae1eb9c025
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@clerk/nextjs": "^6.9.6",
     "@google/generative-ai": "^0.21.0",
     "@langchain/community": "^0.3.20",
@@ -37,25 +32,12 @@
     "razorpay": "^2.9.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-dropzone": "^14.3.8",
     "sonner": "^1.7.1",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "uuid": "^11.0.3",
     "uuid4": "^2.0.3"
-=======
-    "@clerk/nextjs": "^6.9.5",
-    "@radix-ui/react-slot": "^1.1.1",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.469.0",
-    "next": "15.1.2",
-    "nodemon": "^3.1.9",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-dropzone": "^14.3.5",
-    "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
->>>>>>> 62785052cf75ed507755181a49a430ae1eb9c025
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
