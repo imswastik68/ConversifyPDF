@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use client"
 
 import { api } from "@/convex/_generated/api";
@@ -11,7 +10,7 @@ function Dashboard() {
 
   const {user} = useUser();
 
-  const fileList = useQuery(api.fileStorage.GetUserFiles,{
+  const fileList = useQuery(api.fileStorage.GetUderFiles,{
     userEmail: user?.primaryEmailAddress?.emailAddress
   })
 
@@ -22,8 +21,8 @@ function Dashboard() {
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 mt-10">
         
-        {fileList?.length > 0 ? fileList?.map((file, index) => (
-          <Link key={index} href={'/workspace/'+ fileList.fileId}>
+        {(fileList ?? []).length > 0 ? (fileList ?? []).map((file, index) => (
+          <Link key={index} href={'/workspace/'+ (file?.fileId ?? '')}>
             <div className="flex p-5 shadow-md rounded-md flex-col items-center justify-center 
             cursor-pointer border hover:scale-105 transition-all ">
               <Image src={'/pdf.png'} alt="file" width={50} height={50} />
@@ -37,20 +36,6 @@ function Dashboard() {
           </div>
         ))}
       </div>
-=======
-import Documents from "@/components/Documents";
-
-export const dynamic = "force-dynamic";
-
-function Dashboard() {
-  return (
-    <div className="h-full max-w-7xl mx-auto">
-        <h1 className="text-3xl p-5 bg-gray-100 font-extralight text-indigo-600">
-            My Documents
-        </h1>
-
-        <Documents />
->>>>>>> 62785052cf75ed507755181a49a430ae1eb9c025
     </div>
   )
 }

@@ -10,6 +10,9 @@ export async function GET( request: Request ) {
     const { searchParams } = new URL(reqUrl);
     const pdfUrl = searchParams.get("pdfUrl");
     //Load the PDF
+    if (!pdfUrl) {
+        return NextResponse.json({ error: "Invalid or missing pdfUrl parameter" }, { status: 400 });
+    }
     const response = await fetch(pdfUrl);
     const data = await response.blob();
     const loader = new WebPDFLoader(data);
@@ -27,7 +30,7 @@ export async function GET( request: Request ) {
     });
     const output = await textSplitter.splitText(pdfTextContent);
 
-    let splitterList: any[] = [];
+    const splitterList: string[] = [];
     output.forEach(doc => {
         splitterList.push(doc);
     })

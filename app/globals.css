@@ -6,7 +6,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-<<<<<<< HEAD
 .tiptap {
   :first-child {
     margin-top: 0;
@@ -107,8 +106,6 @@ body {
   }
 }
 
-=======
->>>>>>> 62785052cf75ed507755181a49a430ae1eb9c025
 @layer base {
   :root {
     --background: 0 0% 100%;

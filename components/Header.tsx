@@ -1,9 +1,9 @@
 import { SignedIn, UserButton } from '@clerk/nextjs'
 import Link from 'next/link'
-import { Button } from './ui/button'
+import { Button } from './ui//button'
 import { FilePlus2 } from 'lucide-react'
 
-function Header() {
+export default function Header() {
   return (
     <div className='flex justify-between bg-white shadow-sm p-5 border-b'>
         <Link href="/dashboard" className='text-2xl'>
@@ -32,5 +32,3 @@ function Header() {
     </div>
   )
 }
-
-export default Header

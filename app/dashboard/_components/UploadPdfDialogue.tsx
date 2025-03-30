@@ -10,7 +10,7 @@ import {
     DialogClose,
     DialogTrigger,
   } from "@/components/ui/dialog"
-import { ReactNode, useState } from "react"
+import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useAction, useMutation } from "convex/react";
